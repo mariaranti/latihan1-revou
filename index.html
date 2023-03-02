@@ -2,8 +2,123 @@
 <html>
     <head>
         <title>Websiteku</title>
+        <meta name="keywords" content="website, latihan">
+        <style>
+            table, th td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello gaes ^^</h1>
+        <h1>My first Web</h1>
+        <hr><!--garis lurus-->
+
+        <h4>
+            Ini adalah h4.
+            Nyoba <sub>subscript</sub> nyoba <sup>superscript</sup> <br>
+        </h4>
+
+        <p>Ini menggunakan paragraf. Mau ke angka <a href = #"ten">10</a>?</p>
+
+        <h3> Isinya adalah:</h3>
+        <ul>
+            <li>Blablabla</li>
+            <li>Blebleble</li>
+            <li>Blobloblo</li>
+        </ul>
+        <!-- type = "dics"/"circle"/"square"/"none"-->
+
+        <h3> Mari berhitung:</h3>
+        <ol type="1">
+            <li>Satu</li>
+            <li>Dua</li>
+            <li>Tiga</li>
+        </ol>
+        <!-- type = "1"/"a"/"A"/"i"/"I"-->
+
+        <table>
+            <tr>
+                <th>Table Head 1</th>
+                <th>Table Head 2</th>
+                <th>Table Head 3</th>
+            </tr>
+            <tr>
+                <!--merger colspan/rowspan="2"-->
+                <td>Maria</td>
+                <td>Rantika</td>
+                <td>Sari</td>
+            </tr>
+            <tr>
+                <td>Serafison</td>
+                <td>Efotdomi</td>
+                <td>Matawera</td>
+            </tr>
+        </table> <br>
+
+        <a href="https://www.google.com" target="_blank">Gugel</a> <br>
+        <a href="home.html">Home</a>
+
+        <p>
+            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9
+        </p>
+        <h4 id="ten"> 10 </h4>
+
+        <form action="" method="post">
+        <!--action: mau diarahin kemana pindah halaman atau submit ke php
+            method: kalau get data akan terlihat di url, yg post tidak terlihat-->
+            <label for="name">Nama</label>
+            <input id="name" type="text"><br/>
+            <input type="password" required><br/>
+            <!--required: wajib diisi-->
+            <input type="checkbox"><br/>
+
+            <input type="radio" id="html" name="fav_laungage" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_laungage" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_laungage" value="Javascript">
+            <label for="javascript">Javascript</label><br>
+
+            <input type="number" min="1" max="10"><br/>
+            <textarea rows="8" cols="64">Ketik disini</textarea><br/>
+            <input type="submit" value="OK">
+        </form>
+
+        <!--Membuat button diluar form
+            <button type="button">OK</button>
+            <button type="button" onclick="doSomething();">Apply</button>
+        -->
+
+        <p>Apa warna favoritmu?</p>
+        <select>
+            <option>Merah</option>
+            <option>Kuning</option>
+            <option>Hijau</option>
+            <option selected>Biru</option>
+            <!--selected untuk default option-->
+        </select>
+
+        <fieldset>
+            <legend>Data Diri</legend>
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama">
+            </p>
+            <label for="usia">Usia</label>
+            <input type="number" name="usia">
+        </fieldset>
+
+        <article>
+            <header>
+                <h1>Judulnya Gaes</h1>
+                <p>Selamat Datang!</p>
+            </header>
+            <main>
+                <p>Isinya ni Gaes</p>
+            </main>
+            <footer>
+                <p>Done</p>
+            </footer>
+        </article>
     </body>
 </html>
